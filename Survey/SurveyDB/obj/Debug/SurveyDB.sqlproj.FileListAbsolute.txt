@@ -1,0 +1,14 @@
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB.dacpac
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB.dll
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB.pdb
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\obj\Debug\SurveyDB.dll
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\obj\Debug\SurveyDB.pdb
+D:\ProjectMVC\Survey\Survey\SurveyDB\sql\debug\SurveyDB.dacpac
+D:\ProjectMVC\Survey\Survey\SurveyDB\sql\debug\SurveyDB.dll
+D:\ProjectMVC\Survey\Survey\SurveyDB\sql\debug\SurveyDB.pdb
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\SurveyDB.dll
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\SurveyDB.pdb
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\Model.xml
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\refactor.xml
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\postdeploy.sql
+D:\ProjectMVC\Survey\Survey\SurveyDB\obj\Debug\predeploy.sql

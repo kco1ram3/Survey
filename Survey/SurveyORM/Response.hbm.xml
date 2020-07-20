@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="SurveyModel" namespace="Survey">
+  <class name="Response" abstract="1" discriminator-value="0" >
+    <!-- Primary key-->
+    <id name="ID" column="ID" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <discriminator column="Discriminator" type="byte" />
+    <many-to-one name="Parent" column="ParentID" />
+    <many-to-one name="ResponseForm" column="ResponseFormID" />
+    <property name="SequenceNo" />
+    <property name="Score" />
+
+    <subclass name="ResponseSection" discriminator-value="1">
+      <many-to-one name="Question" class="SurveySection" column="QuestionID" />
+      <bag name="Children" >
+        <key column="ParentID" />
+        <one-to-many class="Response" />
+      </bag>
+    </subclass>
+    
+    <subclass name="ChoiceResponse" discriminator-value="2">
+      <bag name="SelectedChoices" >
+        <key column="ParentID" />
+        <one-to-many class="ResponseChoice" />
+      </bag>
+    </subclass>
+
+    <subclass name="LikertResponse" discriminator-value="3">
+      <bag name="ItemResponses" >
+        <key column="ParentID" />
+        <one-to-many class="LikertItemResponse" />
+      </bag>
+    </subclass>
+
+    <!--Survey.ValueResponse`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]-->
+    
+    <subclass name="ValueResponse`1[[System.String]]" discriminator-value="4">
+      <many-to-one name="Question" column="QuestionID" /> <!-- class="ValueQuestion`1[System.String]" -->
+      <property name="ResponseValue" />
+    </subclass>
+
+    <subclass name="ValueResponse`1[[System.Int32]]" discriminator-value="5">
+      <many-to-one name="Question" column="QuestionID" /> <!-- class="ValueQuestion`1[System.Int32]" -->
+      <property name="ResponseValue" />
+    </subclass>
+
+    <subclass name="ValueResponse`1[[System.DateTime]]" discriminator-value="6">
+      <many-to-one name="Question" column="QuestionID" /> <!-- class="ValueQuestion`1[System.DateTime]" -->
+      <property name="ResponseValue" />
+    </subclass>
+   
+  </class>
+</hibernate-mapping>

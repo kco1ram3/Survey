@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="abe24333-7338-4e7f-88ce-a8ba25b7afba" name="Administrator@POOH-PC 2014-06-12 15:13:28" runUser="Pooh-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f5ccd24-3add-4bcc-bfce-3df46712b220">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_POOH-PC 2014-06-12 15_13_28">
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\Survey\bin\Debug\SurveyModel.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyORM\bin\Debug\SurveyORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-12T15:13:28.6072890+07:00" queuing="2014-06-12T15:13:28.7382965+07:00" start="2014-06-12T15:13:28.7412967+07:00" finish="2014-06-12T15:13:31.7914711+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="4b031f74-725d-08c9-c713-bb44629ef52e">
+      <Execution id="8302376b-c9d5-47b3-bde4-97370827961c" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4b031f74-725d-08c9-c713-bb44629ef52e" executionId="8302376b-c9d5-47b3-bde4-97370827961c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8302376b-c9d5-47b3-bde4-97370827961c" testId="4b031f74-725d-08c9-c713-bb44629ef52e" testName="Test_Create_and_Persist_A_Response_Of_SurveyForm1" computerName="POOH-PC" duration="00:00:02.8235049" startTime="2014-06-12T15:13:28.7442969+07:00" endTime="2014-06-12T15:13:31.7714700+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8302376b-c9d5-47b3-bde4-97370827961c">
+      <Output>
+        <StdOut>NHibernate: 
+    SELECT
+        this_.ID as ID4_0_,
+        this_.EffectiveFrom as Effectiv2_4_0_,
+        this_.EffectiveTo as Effectiv3_4_0_,
+        this_.Title as Title4_0_,
+        this_.Instructions as Instruct5_4_0_,
+        this_.EndNote as EndNote4_0_ 
+    FROM
+        SurveyForm this_ 
+    WHERE
+        (
+            (
+                this_.Title = @p0 
+                and this_.EffectiveFrom &lt;= @p1
+            ) 
+            and this_.EffectiveTo &gt; @p2
+        );
+    @p0 = 'Survey Form 1' [Type: String (4000)], @p1 = 6/12/2014 12:00:00 AM [Type: DateTime (0)], @p2 = 6/12/2014 12:00:00 AM [Type: DateTime (0)]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

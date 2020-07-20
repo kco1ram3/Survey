@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="SurveyModel" namespace="Survey">
+  <class name="SurveyQuestion" abstract="1" discriminator-value="0" >
+    <!-- Primary key-->
+    <id name="ID" column="ID" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <discriminator column="Discriminator" type="byte" />
+    <many-to-one name="SurveyForm" class="SurveyForm" column="SurveyFormID" />
+    <many-to-one name="Parent" class="SurveySection" column="ParentID" />
+    <property name="SequenceNo" />
+    <property name="Title" />
+    <property name="Instructions" />
+    <property name="Weight" />
+
+    <subclass name="SurveySection" discriminator-value="1">
+      <bag name="Children" cascade="delete" >
+        <key column="ParentID" />
+        <one-to-many class="SurveyQuestion" />
+      </bag>
+    </subclass>
+
+    <subclass name="ChoiceQuestion" discriminator-value="2">
+      <property name="MaxNumberOfSelection" />
+      <property name="MinNumberOfSelection" />
+      <bag name="Choices" cascade="delete" >
+        <key column="ParentID" />
+        <one-to-many class="Choice" />
+      </bag>
+
+      <subclass name="LikertQuestion" discriminator-value="3">
+        <bag name="Children" cascade="delete" >
+          <key column="ParentID" />
+          <one-to-many class="LikertItem" />
+        </bag>
+      </subclass>
+    </subclass>
+
+    <!--Survey.ValueQuestion`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]-->
+    <subclass name="ValueQuestion`1[[System.String]]" discriminator-value="4">
+      <property name="DefaultValue" />
+      <property name="MaxValue" />
+      <property name="MinValue" />
+      <property name="Suffix" column="TitleSuffix"/>
+    </subclass>
+    
+    <subclass name="ValueQuestion`1[[System.Int32]]" discriminator-value="5">
+      <property name="DefaultValue" />
+      <property name="MaxValue" />
+      <property name="MinValue" />
+      <property name="Suffix" column="TitleSuffix"/>
+    </subclass>
+
+    <subclass name="ValueQuestion`1[[System.DateTime]]" discriminator-value="6">
+      <property name="DefaultValue" />
+      <property name="MaxValue" />
+      <property name="MinValue" />
+      <property name="Suffix" column="TitleSuffix"/>
+    </subclass>
+
+  </class>
+</hibernate-mapping>

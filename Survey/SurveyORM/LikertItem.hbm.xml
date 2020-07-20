@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="SurveyModel" namespace="Survey">
+  <class name="LikertItem" >
+    <!-- Primary key-->
+    <id name="ID" column="ID" type="Int32" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Parent" class="LikertQuestion" column="ParentID" />
+    <property name="SequenceNo" />
+    <property name="Title" />
+  </class>
+</hibernate-mapping>

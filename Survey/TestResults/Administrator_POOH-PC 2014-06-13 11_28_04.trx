@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7f5662da-be98-4467-86c1-18e046ec28ba" name="Administrator@POOH-PC 2014-06-13 11:28:04" runUser="Pooh-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f5ccd24-3add-4bcc-bfce-3df46712b220">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_POOH-PC 2014-06-13 11_28_04">
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\Survey\bin\Debug\SurveyModel.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyORM\bin\Debug\SurveyORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-13T11:28:04.4819418+07:00" queuing="2014-06-13T11:28:04.5949482+07:00" start="2014-06-13T11:28:04.7709583+07:00" finish="2014-06-13T11:28:11.4913427+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_Create_and_Persist_Hospital_Survey" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="7115f652-7c92-2c71-2a6f-140d3ae1b539">
+      <Execution id="ec39d7f2-9a86-4922-89e2-07378a07c4f2" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Create_and_Persist_Hospital_Survey" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7115f652-7c92-2c71-2a6f-140d3ae1b539" executionId="ec39d7f2-9a86-4922-89e2-07378a07c4f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ec39d7f2-9a86-4922-89e2-07378a07c4f2" testId="7115f652-7c92-2c71-2a6f-140d3ae1b539" testName="Test_Create_and_Persist_Hospital_Survey" computerName="POOH-PC" duration="00:00:05.9532589" startTime="2014-06-13T11:28:04.7929596+07:00" endTime="2014-06-13T11:28:11.3503346+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec39d7f2-9a86-4922-89e2-07378a07c4f2">
+      <Output>
+        <StdOut>NHibernate: 
+    INSERT 
+    INTO
+        SurveyForm
+        (EffectiveFrom, EffectiveTo, Title, Instructions, EndNote) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 6/13/2014 11:28:05 AM [Type: DateTime (0)],
+    @p1 = 12/31/9999 11:59:59 PM [Type: DateTime (0)],
+    @p2 = 'HOSPITAL SURVEY ON PATIENT SAFETY CULTURE' [Type: String (4000)],
+    @p3 = 'This survey asks for your opinions about patient safety issues, medical error, and event reporting in your hospital and will take about 10 to 15 minutes to complete.' [Type: String (4000)],
+    @p4 = 'If you do not wish to answer a question, or if a question does not apply to you, you may leave your answer blank.' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, 1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0)],
+    @p1 = NULL [Type: Int32 (0)],
+    @p2 = 1 [Type: Int32 (0)],
+    @p3 = 'SECTION A: Your Work Area/Unit' [Type: String (4000)],
+    @p4 = 'In this survey, think of your “unit” as the work area, department, or clinical area of the hospital where you spend most of your work time or provide most of your clinical services.' [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 1 [Type: Int32 (0)],
+    @p3 = 'What is your primary work area or unit in this hospital? Mark ONE answer by filling in the circle.' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'a. Many different hospital units/No specific unit' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'b. Medicine (nonsurgical)' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'c. Surgery' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'd. Obstetrics' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'e. Pediatrics' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = 'f. Emergency department' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 7 [Type: Int32 (0)],
+    @p2 = 'g. Intensive care unit (any type)' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 8 [Type: Int32 (0)],
+    @p2 = 'h. Psychiatry/mental health' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 9 [Type: Int32 (0)],
+    @p2 = 'i. Rehabilitation' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 10 [Type: Int32 (0)],
+    @p2 = 'j. Pharmacy' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 11 [Type: Int32 (0)],
+    @p2 = 'k. Laboratory' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 12 [Type: Int32 (0)],
+    @p2 = 'l. Radiology' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 13 [Type: Int32 (0)],
+    @p2 = 'm. Anesthesiology' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0)],
+    @p1 = 14 [Type: Int32 (0)],
+    @p2 = 'n. Other, please specify:' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 3);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 2 [Type: Int32 (0)],
+    @p3 = 'Please indicate your agreement or disagreement with the following statements about your work area/unit. Mark your answer by filling in the circle.' [Type: String (4000)],
+    @p4 = 'Think about your hospital work area/unit…' [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'Strongly Disagree' [Type: String (4000)],
+    @p3 = 1 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'Disagree' [Type: String (4000)],
+    @p3 = 2 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'Neither' [Type: String (4000)],
+    @p3 = 3 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'Agree' [Type: String (4000)],
+    @p3 = 4 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'Strongly Agree' [Type: String (4000)],
+    @p3 = 5 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = '1. People support one another in this unit' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = '2. We have enough staff to handle the workload' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = '3. When a lot of work needs to be done quickly, we work together as a team to get the work done' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = '4. In this unit, people treat each other with respect' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = '5. Staff in this unit work longer hours than is best for patient care' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = '6. We are actively doing things to improve patient safety' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 7 [Type: Int32 (0)],
+    @p2 = '7. We use more agency/temporary staff than is best for patient care' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 8 [Type: Int32 (0)],
+    @p2 = '8. Staff feel like their mistakes are held against them' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 9 [Type: Int32 (0)],
+    @p2 = '9. Mistakes have led to positive changes here' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 10 [Type: Int32 (0)],
+    @p2 = '10. It is just by chance that more serious mistakes don’t happen around here' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 11 [Type: Int32 (0)],
+    @p2 = '11. When one area in this unit gets really busy, others help out' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 12 [Type: Int32 (0)],
+    @p2 = '12. When an event is reported, it feels like the person is being written up, not the problem' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 13 [Type: Int32 (0)],
+    @p2 = '13. After we make changes to improve patient safety, we evaluate their effectiveness' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 14 [Type: Int32 (0)],
+    @p2 = '14. We work in "crisis mode" trying to do too much, too quickly' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 15 [Type: Int32 (0)],
+    @p2 = '15. Patient safety is never sacrificed to get more work done' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 16 [Type: Int32 (0)],
+    @p2 = '16. Staff worry that mistakes they make are kept in their    personnel file' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 17 [Type: Int32 (0)],
+    @p2 = '17. We have patient safety problems in this unit' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 3 [Type: Int32 (0)],
+    @p1 = 18 [Type: Int32 (0)],
+    @p2 = '18. Our procedures and systems are good at preventing errors from happening' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, 1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0)],
+    @p1 = NULL [Type: Int32 (0)],
+    @p2 = 2 [Type: Int32 (0)],
+    @p3 = 'SECTION B: Your Supervisor/Manager' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 3);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 1 [Type: Int32 (0)],
+    @p3 = 'Please indicate your agreement or disagreement with the following statements about your immediate supervisor/manager or person to whom you directly report. Mark your answer by filling in the circle.' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'Strongly Disagree' [Type: String (4000)],
+    @p3 = 1 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'Disagree' [Type: String (4000)],
+    @p3 = 2 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'Neither' [Type: String (4000)],
+    @p3 = 3 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'Agree' [Type: String (4000)],
+    @p3 = 4 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'Strongly Agree' [Type: String (4000)],
+    @p3 = 5 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = '1. My supervisor/manager says a good word when he/she sees a job done according to established patient safety procedures' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = '2. My supervisor/manager seriously considers staff suggestions for improving patient safety' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = '3. Whenever pressure builds up, my supervisor/manager wants us to work faster, even if it means taking shortcuts' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        LikertItem
+        (ParentID, SequenceNo, Title) 
+    VALUES
+        (@p0, @p1, @p2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 5 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = '4. My supervisor/manager overlooks patient safety problems that happen over and over' [Type: String (4000)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, 1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0)],
+    @p1 = NULL [Type: Int32 (0)],
+    @p2 = 3 [Type: Int32 (0)],
+    @p3 = 'SECTION E: Patient Safety Grade' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = 1 [Type: Int32 (0)],
+    @p3 = 'Please give your work area/unit in this hospital an overall grade on patient safety.  Mark ONE answer.' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 7 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'A Excellent' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 7 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'B Very Good' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 7 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'C Acceptable' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 7 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'D Poor' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 7 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'E Failing' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, 1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0)],
+    @p1 = NULL [Type: Int32 (0)],
+    @p2 = 4 [Type: Int32 (0)],
+    @p3 = 'SECTION H: Background Information' [Type: String (4000)],
+    @p4 = 'This information will help in the analysis of the survey results.  Mark ONE answer by filling in the circle.' [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 8 [Type: Int32 (0)],
+    @p2 = 1 [Type: Int32 (0)],
+    @p3 = '1.	How long have you worked in this hospital?' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'a. Less than 1 year' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'b. 1 to 5 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'c. 6 to 10 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'd. 11 to 15 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'e. 16 to 20 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 9 [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = 'f. 21 years or more' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 8 [Type: Int32 (0)],
+    @p2 = 2 [Type: Int32 (0)],
+    @p3 = '2.	How long have you worked in your current hospital work area/unit?' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'a. Less than 1 year' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'b. 1 to 5 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'c. 6 to 10 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'd. 11 to 15 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'e. 16 to 20 years' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 10 [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = 'f. 21 years or more' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        SurveyQuestion
+        (SurveyFormID, ParentID, SequenceNo, Title, Instructions, Weight, MaxNumberOfSelection, MinNumberOfSelection, Discriminator) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, 2);
+    select
+        SCOPE_IDENTITY();
+    @p0 = NULL [Type: Int32 (0)],
+    @p1 = 8 [Type: Int32 (0)],
+    @p2 = 3 [Type: Int32 (0)],
+    @p3 = '3. Typically, how many hours per week do you work in this hospital?' [Type: String (4000)],
+    @p4 = NULL [Type: String (4000)],
+    @p5 = 0 [Type: Single (0)],
+    @p6 = 1 [Type: Int32 (0)],
+    @p7 = 1 [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 1 [Type: Int32 (0)],
+    @p2 = 'a. Less than 20 hours per week' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 2 [Type: Int32 (0)],
+    @p2 = 'b. 20 to 39 hours per week' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 3 [Type: Int32 (0)],
+    @p2 = 'c. 40 to 59 hours per week' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 4 [Type: Int32 (0)],
+    @p2 = 'd. 60 to 79 hours per week' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 5 [Type: Int32 (0)],
+    @p2 = 'e. 80 to 99 hours per week' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]
+NHibernate: 
+    INSERT 
+    INTO
+        Choice
+        (ParentID, SequenceNo, Title, Weight, FurtherQuestionID) 
+    VALUES
+        (@p0, @p1, @p2, @p3, @p4);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 11 [Type: Int32 (0)],
+    @p1 = 6 [Type: Int32 (0)],
+    @p2 = 'f. 100 hours per week or more' [Type: String (4000)],
+    @p3 = 0 [Type: Double (0)],
+    @p4 = NULL [Type: Int32 (0)]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

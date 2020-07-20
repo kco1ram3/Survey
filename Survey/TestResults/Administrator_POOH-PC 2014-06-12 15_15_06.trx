@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="edfccbf7-e816-47c3-a7b1-e6677567430b" name="Administrator@POOH-PC 2014-06-12 15:15:06" runUser="Pooh-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f5ccd24-3add-4bcc-bfce-3df46712b220">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_POOH-PC 2014-06-12 15_15_06">
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\Survey\bin\Debug\SurveyModel.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyORM\bin\Debug\SurveyORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-12T15:15:06.9949165+07:00" queuing="2014-06-12T15:15:07.0889218+07:00" start="2014-06-12T15:15:07.0919220+07:00" finish="2014-06-12T15:15:10.5931223+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="4b031f74-725d-08c9-c713-bb44629ef52e">
+      <Execution id="a52a32e8-77b4-45c9-bafb-c55c06fd8a1f" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4b031f74-725d-08c9-c713-bb44629ef52e" executionId="a52a32e8-77b4-45c9-bafb-c55c06fd8a1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a52a32e8-77b4-45c9-bafb-c55c06fd8a1f" testId="4b031f74-725d-08c9-c713-bb44629ef52e" testName="Test_Create_and_Persist_A_Response_Of_SurveyForm1" computerName="POOH-PC" duration="00:00:03.2560147" startTime="2014-06-12T15:15:07.0959222+07:00" endTime="2014-06-12T15:15:10.5541200+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a52a32e8-77b4-45c9-bafb-c55c06fd8a1f">
+      <Output>
+        <StdOut>NHibernate: 
+    SELECT
+        this_.ID as ID4_0_,
+        this_.EffectiveFrom as Effectiv2_4_0_,
+        this_.EffectiveTo as Effectiv3_4_0_,
+        this_.Title as Title4_0_,
+        this_.Instructions as Instruct5_4_0_,
+        this_.EndNote as EndNote4_0_ 
+    FROM
+        SurveyForm this_ 
+    WHERE
+        (
+            (
+                this_.Title = @p0 
+                and this_.EffectiveFrom &lt;= @p1
+            ) 
+            and this_.EffectiveTo &gt; @p2
+        );
+    @p0 = 'Survey Form 1' [Type: String (4000)], @p1 = 6/12/2014 12:00:00 AM [Type: DateTime (0)], @p2 = 6/12/2014 12:00:00 AM [Type: DateTime (0)]
+NHibernate: 
+    SELECT
+        questions0_.SurveyFormID as SurveyFo3_1_,
+        questions0_.ID as ID1_,
+        questions0_.ID as ID7_0_,
+        questions0_.SurveyFormID as SurveyFo3_7_0_,
+        questions0_.ParentID as ParentID7_0_,
+        questions0_.SequenceNo as SequenceNo7_0_,
+        questions0_.Title as Title7_0_,
+        questions0_.Instructions as Instruct7_7_0_,
+        questions0_.Weight as Weight7_0_,
+        questions0_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        questions0_.MinNumberOfSelection as MinNumb10_7_0_,
+        questions0_.DefaultValue as Default11_7_0_,
+        questions0_.MaxValue as MaxValue7_0_,
+        questions0_.MinValue as MinValue7_0_,
+        questions0_.TitleSuffix as TitleSu14_7_0_,
+        questions0_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        SurveyQuestion questions0_ 
+    WHERE
+        questions0_.SurveyFormID=@p0;
+    @p0 = 1 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        children0_.ParentID as ParentID1_,
+        children0_.ID as ID1_,
+        children0_.ID as ID7_0_,
+        children0_.SurveyFormID as SurveyFo3_7_0_,
+        children0_.ParentID as ParentID7_0_,
+        children0_.SequenceNo as SequenceNo7_0_,
+        children0_.Title as Title7_0_,
+        children0_.Instructions as Instruct7_7_0_,
+        children0_.Weight as Weight7_0_,
+        children0_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        children0_.MinNumberOfSelection as MinNumb10_7_0_,
+        children0_.DefaultValue as Default11_7_0_,
+        children0_.MaxValue as MaxValue7_0_,
+        children0_.MinValue as MinValue7_0_,
+        children0_.TitleSuffix as TitleSu14_7_0_,
+        children0_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        SurveyQuestion children0_ 
+    WHERE
+        children0_.ParentID=@p0;
+    @p0 = 1 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        children0_.ParentID as ParentID1_,
+        children0_.ID as ID1_,
+        children0_.ID as ID7_0_,
+        children0_.SurveyFormID as SurveyFo3_7_0_,
+        children0_.ParentID as ParentID7_0_,
+        children0_.SequenceNo as SequenceNo7_0_,
+        children0_.Title as Title7_0_,
+        children0_.Instructions as Instruct7_7_0_,
+        children0_.Weight as Weight7_0_,
+        children0_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        children0_.MinNumberOfSelection as MinNumb10_7_0_,
+        children0_.DefaultValue as Default11_7_0_,
+        children0_.MaxValue as MaxValue7_0_,
+        children0_.MinValue as MinValue7_0_,
+        children0_.TitleSuffix as TitleSu14_7_0_,
+        children0_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        SurveyQuestion children0_ 
+    WHERE
+        children0_.ParentID=@p0;
+    @p0 = 6 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        choices0_.ParentID as ParentID2_,
+        choices0_.ID as ID2_,
+        choices0_.ID as ID0_1_,
+        choices0_.ParentID as ParentID0_1_,
+        choices0_.SequenceNo as SequenceNo0_1_,
+        choices0_.Title as Title0_1_,
+        choices0_.Weight as Weight0_1_,
+        choices0_.FurtherQuestionID as FurtherQ6_0_1_,
+        surveyques1_.ID as ID7_0_,
+        surveyques1_.SurveyFormID as SurveyFo3_7_0_,
+        surveyques1_.ParentID as ParentID7_0_,
+        surveyques1_.SequenceNo as SequenceNo7_0_,
+        surveyques1_.Title as Title7_0_,
+        surveyques1_.Instructions as Instruct7_7_0_,
+        surveyques1_.Weight as Weight7_0_,
+        surveyques1_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        surveyques1_.MinNumberOfSelection as MinNumb10_7_0_,
+        surveyques1_.DefaultValue as Default11_7_0_,
+        surveyques1_.MaxValue as MaxValue7_0_,
+        surveyques1_.MinValue as MinValue7_0_,
+        surveyques1_.TitleSuffix as TitleSu14_7_0_,
+        surveyques1_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        Choice choices0_ 
+    left outer join
+        SurveyQuestion surveyques1_ 
+            on choices0_.FurtherQuestionID=surveyques1_.ID 
+    WHERE
+        choices0_.ParentID=@p0;
+    @p0 = 7 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        children0_.ParentID as ParentID1_,
+        children0_.ID as ID1_,
+        children0_.ID as ID7_0_,
+        children0_.SurveyFormID as SurveyFo3_7_0_,
+        children0_.ParentID as ParentID7_0_,
+        children0_.SequenceNo as SequenceNo7_0_,
+        children0_.Title as Title7_0_,
+        children0_.Instructions as Instruct7_7_0_,
+        children0_.Weight as Weight7_0_,
+        children0_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        children0_.MinNumberOfSelection as MinNumb10_7_0_,
+        children0_.DefaultValue as Default11_7_0_,
+        children0_.MaxValue as MaxValue7_0_,
+        children0_.MinValue as MinValue7_0_,
+        children0_.TitleSuffix as TitleSu14_7_0_,
+        children0_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        SurveyQuestion children0_ 
+    WHERE
+        children0_.ParentID=@p0;
+    @p0 = 2 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        choices0_.ParentID as ParentID2_,
+        choices0_.ID as ID2_,
+        choices0_.ID as ID0_1_,
+        choices0_.ParentID as ParentID0_1_,
+        choices0_.SequenceNo as SequenceNo0_1_,
+        choices0_.Title as Title0_1_,
+        choices0_.Weight as Weight0_1_,
+        choices0_.FurtherQuestionID as FurtherQ6_0_1_,
+        surveyques1_.ID as ID7_0_,
+        surveyques1_.SurveyFormID as SurveyFo3_7_0_,
+        surveyques1_.ParentID as ParentID7_0_,
+        surveyques1_.SequenceNo as SequenceNo7_0_,
+        surveyques1_.Title as Title7_0_,
+        surveyques1_.Instructions as Instruct7_7_0_,
+        surveyques1_.Weight as Weight7_0_,
+        surveyques1_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        surveyques1_.MinNumberOfSelection as MinNumb10_7_0_,
+        surveyques1_.DefaultValue as Default11_7_0_,
+        surveyques1_.MaxValue as MaxValue7_0_,
+        surveyques1_.MinValue as MinValue7_0_,
+        surveyques1_.TitleSuffix as TitleSu14_7_0_,
+        surveyques1_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        Choice choices0_ 
+    left outer join
+        SurveyQuestion surveyques1_ 
+            on choices0_.FurtherQuestionID=surveyques1_.ID 
+    WHERE
+        choices0_.ParentID=@p0;
+    @p0 = 3 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        children0_.ParentID as ParentID1_,
+        children0_.ID as ID1_,
+        children0_.ID as ID7_0_,
+        children0_.SurveyFormID as SurveyFo3_7_0_,
+        children0_.ParentID as ParentID7_0_,
+        children0_.SequenceNo as SequenceNo7_0_,
+        children0_.Title as Title7_0_,
+        children0_.Instructions as Instruct7_7_0_,
+        children0_.Weight as Weight7_0_,
+        children0_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        children0_.MinNumberOfSelection as MinNumb10_7_0_,
+        children0_.DefaultValue as Default11_7_0_,
+        children0_.MaxValue as MaxValue7_0_,
+        children0_.MinValue as MinValue7_0_,
+        children0_.TitleSuffix as TitleSu14_7_0_,
+        children0_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        SurveyQuestion children0_ 
+    WHERE
+        children0_.ParentID=@p0;
+    @p0 = 9 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        choices0_.ParentID as ParentID2_,
+        choices0_.ID as ID2_,
+        choices0_.ID as ID0_1_,
+        choices0_.ParentID as ParentID0_1_,
+        choices0_.SequenceNo as SequenceNo0_1_,
+        choices0_.Title as Title0_1_,
+        choices0_.Weight as Weight0_1_,
+        choices0_.FurtherQuestionID as FurtherQ6_0_1_,
+        surveyques1_.ID as ID7_0_,
+        surveyques1_.SurveyFormID as SurveyFo3_7_0_,
+        surveyques1_.ParentID as ParentID7_0_,
+        surveyques1_.SequenceNo as SequenceNo7_0_,
+        surveyques1_.Title as Title7_0_,
+        surveyques1_.Instructions as Instruct7_7_0_,
+        surveyques1_.Weight as Weight7_0_,
+        surveyques1_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        surveyques1_.MinNumberOfSelection as MinNumb10_7_0_,
+        surveyques1_.DefaultValue as Default11_7_0_,
+        surveyques1_.MaxValue as MaxValue7_0_,
+        surveyques1_.MinValue as MinValue7_0_,
+        surveyques1_.TitleSuffix as TitleSu14_7_0_,
+        surveyques1_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        Choice choices0_ 
+    left outer join
+        SurveyQuestion surveyques1_ 
+            on choices0_.FurtherQuestionID=surveyques1_.ID 
+    WHERE
+        choices0_.ParentID=@p0;
+    @p0 = 10 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        children0_.ParentID as ParentID1_,
+        children0_.ID as ID1_,
+        children0_.ID as ID3_0_,
+        children0_.ParentID as ParentID3_0_,
+        children0_.SequenceNo as SequenceNo3_0_,
+        children0_.Title as Title3_0_ 
+    FROM
+        LikertItem children0_ 
+    WHERE
+        children0_.ParentID=@p0;
+    @p0 = 11 [Type: Int32 (0)]
+NHibernate: 
+    SELECT
+        choices0_.ParentID as ParentID2_,
+        choices0_.ID as ID2_,
+        choices0_.ID as ID0_1_,
+        choices0_.ParentID as ParentID0_1_,
+        choices0_.SequenceNo as SequenceNo0_1_,
+        choices0_.Title as Title0_1_,
+        choices0_.Weight as Weight0_1_,
+        choices0_.FurtherQuestionID as FurtherQ6_0_1_,
+        surveyques1_.ID as ID7_0_,
+        surveyques1_.SurveyFormID as SurveyFo3_7_0_,
+        surveyques1_.ParentID as ParentID7_0_,
+        surveyques1_.SequenceNo as SequenceNo7_0_,
+        surveyques1_.Title as Title7_0_,
+        surveyques1_.Instructions as Instruct7_7_0_,
+        surveyques1_.Weight as Weight7_0_,
+        surveyques1_.MaxNumberOfSelection as MaxNumbe9_7_0_,
+        surveyques1_.MinNumberOfSelection as MinNumb10_7_0_,
+        surveyques1_.DefaultValue as Default11_7_0_,
+        surveyques1_.MaxValue as MaxValue7_0_,
+        surveyques1_.MinValue as MinValue7_0_,
+        surveyques1_.TitleSuffix as TitleSu14_7_0_,
+        surveyques1_.Discriminator as Discrimi2_7_0_ 
+    FROM
+        Choice choices0_ 
+    left outer join
+        SurveyQuestion surveyques1_ 
+            on choices0_.FurtherQuestionID=surveyques1_.ID 
+    WHERE
+        choices0_.ParentID=@p0;
+    @p0 = 11 [Type: Int32 (0)]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

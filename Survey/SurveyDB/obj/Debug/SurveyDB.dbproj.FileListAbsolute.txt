@@ -1,0 +1,32 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB_Script.PreDeployment.sql
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB_Script.PostDeployment.sql
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB_Database.sqlsettings
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB_Database.sqldeployment
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB_Database.sqlcmdvars
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB.deploymanifest
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\sql\debug\SurveyDB.dbschema
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey4\SurveyDB\obj\Debug\SurveyDB.dbschema
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB_Script.PreDeployment.sql
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB_Script.PostDeployment.sql
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB_Database.sqlsettings
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB_Database.sqldeployment
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB_Database.sqlcmdvars
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB.deploymanifest
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\sql\debug\SurveyDB.dbschema
+C:\Users\User\Documents\Visual Studio 2010\Projects\Survey5\SurveyDB\obj\Debug\SurveyDB.dbschema
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB_Script.PreDeployment.sql
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB_Script.PostDeployment.sql
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB_Database.sqlsettings
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB_Database.sqldeployment
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB_Database.sqlcmdvars
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB.deploymanifest
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\sql\debug\SurveyDB.dbschema
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\26 Apr 2014\Survey7\SurveyDB\obj\Debug\SurveyDB.dbschema
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB_Script.PreDeployment.sql
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB_Script.PostDeployment.sql
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB_Database.sqlsettings
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB_Database.sqldeployment
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB_Database.sqlcmdvars
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB.deploymanifest
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\sql\debug\SurveyDB.dbschema
+D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyDB\obj\Debug\SurveyDB.dbschema

@@ -1,0 +1,129 @@
+﻿@model Survey.SurveyForm
+
+@{
+    ViewBag.Title = "My Survey Form";
+}
+
+<p><h1>@Html.DisplayFor(modelItem => Model.Title)</h1></p>
+<p><b>@Html.DisplayFor(modelItem => Model.Instructions)</b></p>
+<p><b>@Html.DisplayFor(modelItem => Model.EndNote)</b></p>
+
+@foreach (var itemMain in Model.Questions)
+{
+    //<h3>Survey.SurveySection</h3>
+    var ssItem = (Survey.SurveySection) itemMain;
+    <p><b><u>@Html.DisplayFor(modelItem => ssItem.Title)</u></b></p>
+    <p><b>@Html.DisplayFor(modelItem => ssItem.Instructions)</b></p>
+    
+    var question = (Survey.SurveySection) itemMain;
+    foreach (var itemSub in question.Children)
+    {
+        if (itemSub is Survey.LikertQuestion)
+        {
+            //<h3>Survey.LikertQuestion</h3>
+            var lqItem = (Survey.LikertQuestion) itemSub;
+            //var lItem = (Survey.LikertItem) lqItem.Children;
+            <p><b>@Html.DisplayFor(modelItem => lqItem.Title)</b></p>
+            <table width="100%" border="1">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayFor(modelItem => lqItem.Instructions)</th>
+                        @foreach (var cItem in lqItem.Choices)
+                        {
+                            <th style="text-align: center;">@Html.DisplayFor(modelItem => cItem.Title)</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var lItem in lqItem.Children)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => lItem.Title)</td>
+                            @foreach (var cItem in lqItem.Choices)
+                            {
+                                if (lqItem.MinNumberOfSelection > 1)
+                                {
+                                    <td style="text-align: center;">@Html.CheckBox(lItem.ID + "", cItem.ID)</td>
+                                }
+                                else
+                                {
+                                    <td style="text-align: center;">@Html.RadioButton(lItem.ID + "", cItem.ID)</td>
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <br />
+        }
+        else if (itemSub is Survey.ChoiceQuestion)
+        {
+            //<h3>Survey.ChoiceQuestion</h3>
+            var cqItem = (Survey.ChoiceQuestion) itemSub;
+            <p><b>@Html.DisplayFor(modelItem => cqItem.Title)<br />@Html.DisplayFor(modelItem => cqItem.Instructions)</b></p>
+            <ul style="list-style: none;">
+                @foreach (var cItem in cqItem.Choices)
+                {
+                    <li>
+                        @if (cqItem.MinNumberOfSelection > 1)
+                        {
+                            @Html.CheckBox(cqItem.ID + "", cItem.ID)
+                        }
+                        else
+                        {
+                            @Html.RadioButton(cqItem.ID + "", cItem.ID) 
+                        }
+                        @Html.DisplayFor(modelItem => cItem.Title)
+                        @if (cItem.FurtherQuestion != null)
+                        {
+                            if (cItem.FurtherQuestion is Survey.ValueQuestion<int>)
+                            {
+                                var vqiItem = (Survey.ValueQuestion<int>) cItem.FurtherQuestion;
+                            }
+                            else if (cItem.FurtherQuestion is Survey.ValueQuestion<DateTime>)
+                            {
+                                var vqdItem = (Survey.ValueQuestion<DateTime>) cItem.FurtherQuestion;
+                            }
+                            else if (cItem.FurtherQuestion is Survey.ValueQuestion<String>)
+                            {
+                                var vqsItem = (Survey.ValueQuestion<String>) cItem.FurtherQuestion;
+                                if (vqsItem.MaxValue != null && Int16.Parse(vqsItem.MaxValue) > 100)
+                                {
+                                    @Html.TextArea(cItem.FurtherQuestion.ID + "", vqsItem.DefaultValue, new { maxlength = vqsItem.MaxValue })
+                                }
+                                else
+                                {
+                                    @Html.TextBox(cItem.FurtherQuestion.ID + "", vqsItem.DefaultValue, new { maxlength = vqsItem.MaxValue })
+                                }
+                            }
+                        }
+                    </li>
+                }
+            </ul>
+        }
+        else if (itemSub is Survey.ValueQuestion<int>)
+        {
+            //<h3>Survey.ValueQuestion(int)</h3>
+            var vqiItem = (Survey.ValueQuestion<int>) itemSub;
+        }
+        else if (itemSub is Survey.ValueQuestion<DateTime>)
+        {
+            //<h3>Survey.ValueQuestion(DateTime)</h3>
+            var vqdItem = (Survey.ValueQuestion<DateTime>) itemSub;
+        }
+        else if (itemSub is Survey.ValueQuestion<String>)
+        {
+            //<h3>Survey.ValueQuestion(String)</h3>
+            var vqsItem = (Survey.ValueQuestion<String>) itemSub;
+            <p><b>@Html.DisplayFor(modelItem => vqsItem.Title)</b></p>
+            if (vqsItem.MaxValue != null && Int16.Parse(vqsItem.MaxValue) > 100)
+            {
+                @Html.TextArea(vqsItem.ID + "", vqsItem.DefaultValue, 10, 50, new { maxlength = vqsItem.MaxValue })
+            }
+            else
+            {
+                @Html.TextBox(vqsItem.ID + "", vqsItem.DefaultValue, new { maxlength = vqsItem.MaxValue })
+            }
+        }
+    }
+}

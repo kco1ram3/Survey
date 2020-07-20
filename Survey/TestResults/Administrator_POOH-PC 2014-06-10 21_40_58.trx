@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a740ffe4-3a1c-4a89-b738-a8e95ceb7a9b" name="Administrator@POOH-PC 2014-06-10 21:40:58" runUser="Pooh-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f5ccd24-3add-4bcc-bfce-3df46712b220">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_POOH-PC 2014-06-10 21_40_58">
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\Survey\bin\Debug\SurveyModel.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyORM\bin\Debug\SurveyORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-10T21:40:58.3190462+07:00" queuing="2014-06-10T21:41:03.4103374+07:00" start="2014-06-10T21:41:03.6483510+07:00" finish="2014-06-10T21:41:09.6856963+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_ORM" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="7aca0496-002c-7d60-37df-61d0916a9cfa">
+      <Execution id="71facdb9-a563-4ed3-a99b-5951128fc6d3" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_ORM" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7aca0496-002c-7d60-37df-61d0916a9cfa" executionId="71facdb9-a563-4ed3-a99b-5951128fc6d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71facdb9-a563-4ed3-a99b-5951128fc6d3" testId="7aca0496-002c-7d60-37df-61d0916a9cfa" testName="Test_ORM" computerName="POOH-PC" duration="00:00:04.6250234" startTime="2014-06-10T21:41:03.8843645+07:00" endTime="2014-06-10T21:41:09.5256872+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71facdb9-a563-4ed3-a99b-5951128fc6d3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

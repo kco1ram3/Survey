@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7b6a3b41-2340-4175-9545-f6a5e2aa55ef" name="Administrator@POOH-PC 2014-06-11 18:53:31" runUser="Pooh-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f5ccd24-3add-4bcc-bfce-3df46712b220">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_POOH-PC 2014-06-11 18_53_31">
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\Survey\bin\Debug\SurveyModel.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll" />
+      <DeploymentItem filename="D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\SurveyORM\bin\Debug\SurveyORM.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-11T18:53:31.4237510+07:00" queuing="2014-06-11T18:53:38.3581476+07:00" start="2014-06-11T18:53:38.8301746+07:00" finish="2014-06-11T18:54:43.6838841+07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="5" passed="3" error="0" failed="1" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="POOH-PC" outcome="Error" timestamp="2014-06-11T18:54:43.4358699+07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_ORM" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="7aca0496-002c-7d60-37df-61d0916a9cfa">
+      <Execution id="06d2e006-8093-4111-9a30-54dcf4a30f50" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_ORM" />
+    </UnitTest>
+    <UnitTest name="Test_Getting_A_Persisted_Survey_Form" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="cebcec0f-3947-44af-49a0-2f9334917d37">
+      <Execution id="ca7fb826-d683-419e-a262-1a1daae7626f" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Getting_A_Persisted_Survey_Form" />
+    </UnitTest>
+    <UnitTest name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="4b031f74-725d-08c9-c713-bb44629ef52e">
+      <Execution id="5cff38b3-1e42-4675-9cdc-094a8705ca0e" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Create_and_Persist_A_Response_Of_SurveyForm1" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="fddb74da-6321-4acc-3102-ea87b34cbbf7">
+      <Execution id="255b3b9c-8dfb-4556-a44a-ec9142119933" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="Test_TypeName" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="33a24d51-9cc7-3e6b-a478-6406a6e39493">
+      <Execution id="be8767ab-9e9b-492b-8419-f4cb526a719b" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_TypeName" />
+    </UnitTest>
+    <UnitTest name="Test_Create_and_Persist_Survey_Form1" storage="d:\nida software engineer #3\ci7912 - object-oriented analysis and design\project\survey\testsurvey\bin\debug\testsurvey.dll" id="0c8d2f84-fd80-6888-48f9-35c986fefc6b">
+      <Execution id="8858e42b-9f0c-4314-b4c5-3dbd31331fe9" />
+      <TestMethod codeBase="D:/NIDA Software Engineer #3/CI7912 - Object-Oriented Analysis and Design/Project/Survey/TestSurvey/bin/Debug/TestSurvey.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestSurvey.UnitTest1, TestSurvey, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Create_and_Persist_Survey_Form1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7aca0496-002c-7d60-37df-61d0916a9cfa" executionId="06d2e006-8093-4111-9a30-54dcf4a30f50" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33a24d51-9cc7-3e6b-a478-6406a6e39493" executionId="be8767ab-9e9b-492b-8419-f4cb526a719b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fddb74da-6321-4acc-3102-ea87b34cbbf7" executionId="255b3b9c-8dfb-4556-a44a-ec9142119933" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c8d2f84-fd80-6888-48f9-35c986fefc6b" executionId="8858e42b-9f0c-4314-b4c5-3dbd31331fe9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cebcec0f-3947-44af-49a0-2f9334917d37" executionId="ca7fb826-d683-419e-a262-1a1daae7626f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b031f74-725d-08c9-c713-bb44629ef52e" executionId="5cff38b3-1e42-4675-9cdc-094a8705ca0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="06d2e006-8093-4111-9a30-54dcf4a30f50" testId="7aca0496-002c-7d60-37df-61d0916a9cfa" testName="Test_ORM" computerName="POOH-PC" duration="00:00:05.4489765" startTime="2014-06-11T18:53:39.0721885+07:00" endTime="2014-06-11T18:53:47.0846468+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06d2e006-8093-4111-9a30-54dcf4a30f50">
+    </UnitTestResult>
+    <UnitTestResult executionId="be8767ab-9e9b-492b-8419-f4cb526a719b" testId="33a24d51-9cc7-3e6b-a478-6406a6e39493" testName="Test_TypeName" computerName="POOH-PC" duration="00:00:28.7776290" startTime="2014-06-11T18:53:47.0966475+07:00" endTime="2014-06-11T18:54:15.8812938+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be8767ab-9e9b-492b-8419-f4cb526a719b">
+    </UnitTestResult>
+    <UnitTestResult executionId="255b3b9c-8dfb-4556-a44a-ec9142119933" testId="fddb74da-6321-4acc-3102-ea87b34cbbf7" testName="TestMethod1" computerName="POOH-PC" duration="00:00:00.0083219" startTime="2014-06-11T18:54:15.9092954+07:00" endTime="2014-06-11T18:54:15.9352969+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="255b3b9c-8dfb-4556-a44a-ec9142119933">
+    </UnitTestResult>
+    <UnitTestResult executionId="8858e42b-9f0c-4314-b4c5-3dbd31331fe9" testId="0c8d2f84-fd80-6888-48f9-35c986fefc6b" testName="Test_Create_and_Persist_Survey_Form1" computerName="POOH-PC" duration="00:00:23.6982469" startTime="2014-06-11T18:54:15.9412973+07:00" endTime="2014-06-11T18:54:39.6456531+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8858e42b-9f0c-4314-b4c5-3dbd31331fe9">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestSurvey.UnitTest1.Test_Create_and_Persist_Survey_Form1 threw exception: 
+NHibernate.TransactionException: Begin failed with SQL exception ---&gt; System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection() in p:\nhibernate-core\src\NHibernate\Connection\DriverConnectionProvider.cs:line 46
+   at NHibernate.AdoNet.ConnectionManager.GetConnection() in p:\nhibernate-core\src\NHibernate\AdoNet\ConnectionManager.cs:line 196
+   at NHibernate.Impl.SessionImpl.get_Connection() in p:\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:line 1634
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel) in p:\nhibernate-core\src\NHibernate\Transaction\AdoTransaction.cs:line 137
+ --- End of inner exception stack trace ---
+    at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel) in p:\nhibernate-core\src\NHibernate\Transaction\AdoTransaction.cs:line 148
+   at NHibernate.Transaction.AdoTransaction.Begin() in p:\nhibernate-core\src\NHibernate\Transaction\AdoTransaction.cs:line 97
+   at NHibernate.AdoNet.ConnectionManager.BeginTransaction() in p:\nhibernate-core\src\NHibernate\AdoNet\ConnectionManager.cs:line 324
+   at NHibernate.Impl.SessionImpl.BeginTransaction() in p:\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:line 1467
+   at TestSurvey.UnitTest1.Test_Create_and_Persist_Survey_Form1() in D:\NIDA Software Engineer #3\CI7912 - Object-Oriented Analysis and Design\Project\Survey\TestSurvey\UnitTest1.cs:line 236
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ca7fb826-d683-419e-a262-1a1daae7626f" testId="cebcec0f-3947-44af-49a0-2f9334917d37" testName="Test_Getting_A_Persisted_Survey_Form" computerName="POOH-PC" duration="00:00:03.7852165" startTime="2014-06-11T18:54:39.6516534+07:00" endTime="2014-06-11T18:54:43.4368699+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca7fb826-d683-419e-a262-1a1daae7626f">
+    </UnitTestResult>
+    <UnitTestResult executionId="5cff38b3-1e42-4675-9cdc-094a8705ca0e" testId="4b031f74-725d-08c9-c713-bb44629ef52e" testName="Test_Create_and_Persist_A_Response_Of_SurveyForm1" computerName="POOH-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5cff38b3-1e42-4675-9cdc-094a8705ca0e">
+    </UnitTestResult>
+  </Results>
+</TestRun>
